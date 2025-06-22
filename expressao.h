@@ -25,5 +25,7 @@ void liberarPilha(Pilha *p);
 // OPERAÇÕES
 int lerOpcao();
 void converte(Pilha* p, int opcao);
+// Converter infixada -> pos-Fixada
+void posFixada(Pilha* p);
 
 #endif
