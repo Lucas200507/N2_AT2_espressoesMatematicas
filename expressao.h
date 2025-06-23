@@ -2,9 +2,8 @@
 #define EXPRESSOES_H
 
 typedef struct no{
-    char dado;
-    struct no* prox;    
-    struct no* ant;
+    float dado;
+    struct no* prox;        
 } No;
 
 typedef struct{
@@ -12,12 +11,10 @@ typedef struct{
     int tamanho;
 } Pilha;
 
-
-
 // PILHA
 Pilha* criarPilha();
-void empilhar(Pilha* p, char valor);
-char desempilhar(Pilha* p, char valor);
+void empilhar(Pilha* p, float valor);
+float desempilhar(Pilha* p);
 int estaVazia(Pilha* p);
 void mostrarPilha(Pilha *p);
 void liberarPilha(Pilha *p);
